@@ -107,19 +107,19 @@ export function NavPrimary({ className }: { className?: string }) {
         </NavigationMenuItem> */}
 
         <NavigationMenuItem>
-          <Link href="/#portfolio" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink asChild>
+            <Link href="/#portfolio" className={navigationMenuTriggerStyle()}>
               Portfolio
-            </NavigationMenuLink>
-          </Link>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <Link href="/principles" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+          <NavigationMenuLink asChild>
+            <Link href="/principles" className={navigationMenuTriggerStyle()}>
               Principles
-            </NavigationMenuLink>
-          </Link>
+            </Link>
+          </NavigationMenuLink>
         </NavigationMenuItem>
         
       </NavigationMenuList>
