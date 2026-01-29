@@ -26,7 +26,6 @@ export default function Home() {
         <li><a href="https://github.com/amazingrando"><FontAwesomeIcon icon={faGithub} /></a></li>
         <li><a href="https://bsky.app/profile/amazingrando.com"><FontAwesomeIcon icon={faBluesky} /></a></li>
         <li><a href="https://drinkinganddragons.com/wiki/Main_Page"><FontAwesomeIcon icon={faSwords} /></a></li>
-
       </ul>
     </main >
   );
