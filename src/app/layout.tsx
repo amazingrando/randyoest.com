@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
 import { config } from '@fortawesome/fontawesome-svg-core';
 import Fathom from '@/lib/fathom';
 
@@ -24,9 +22,7 @@ export default function RootLayout({
         className={`antialiased font-base text-slate-700`}
       >
         <Fathom />
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
