@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -22,6 +23,13 @@ export default function RootLayout({
         className={`antialiased font-base text-slate-700`}
       >
         <Fathom />
+        <Script id="plausible-init" strategy="afterInteractive">
+          {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
+        </Script>
+        <Script
+          src="https://analytics.amazingrando.com/js/pa-gIS-TSeB98HH-ny1mq58Q.js"
+          strategy="afterInteractive"
+        />
         {children}
       </body>
     </html>
