@@ -3,7 +3,6 @@ import Script from "next/script";
 import "./globals.css";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
-import Fathom from '@/lib/fathom';
 
 config.autoAddCss = false;
 
@@ -22,7 +21,6 @@ export default function RootLayout({
       <body
         className={`antialiased font-base text-slate-700`}
       >
-        <Fathom />
         <Script id="plausible-init" strategy="afterInteractive">
           {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
         </Script>
